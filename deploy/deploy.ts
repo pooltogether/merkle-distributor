@@ -27,7 +27,7 @@ module.exports = async (hardhat) => {
 
   console.log(JSON.stringify(claims))
 
-  const distributorResult = await deploy('MerkleDistributor', {
+  const distributorResult = await deploy('ClearableMerkleDistributor', {
     args: [
       pool,
       tree.getHexRoot()  
