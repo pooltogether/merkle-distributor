@@ -18,3 +18,11 @@ The following assumes the use of `node@>=10`.
 ## Run Tests
 
 `yarn test`
+
+## Deploy to Rinkeby
+
+`hardhat deploy --network rinkeby`
+
+## Verify the Contracts
+
+`hardhat etherscan-verify --nework rinkeby`
