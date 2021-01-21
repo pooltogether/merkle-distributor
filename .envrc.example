@@ -1,0 +1,4 @@
+export HDWALLET_MNEMONIC=
+export INFURA_API_KEY=
+export ETHERSCAN_API_KEY=
+export ALCHEMY_URL=
