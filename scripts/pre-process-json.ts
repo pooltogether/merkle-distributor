@@ -11,8 +11,10 @@ program
 
 program.parse(process.argv)
 
-console.log("[")
-fs.readFileSync(program.input, { encoding: 'utf8' }).split(/\r?\n/).forEach(function(line){
-   console.log(line + ",") 
-})
-console.log("]")
+console.log('[')
+fs.readFileSync(program.input, { encoding: 'utf8' })
+  .split(/\r?\n/)
+  .forEach(function (line) {
+    console.log(line + ',')
+  })
+console.log(']')

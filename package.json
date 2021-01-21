@@ -48,7 +48,7 @@
     "clean": "rm -rf artifacts build cache",
     "compile": "hardhat compile",
     "test": "hardhat test",
-    "preprocess" : "ts-node scripts/pre-process-json.ts",
+    "preprocess": "ts-node scripts/pre-process-json.ts",
     "generate-merkle-root": "ts-node scripts/generate-merkle-root.ts",
     "generate-merkle-root:example": "ts-node scripts/generate-merkle-root.ts --input scripts/example.json",
     "prepublishOnly": "yarn test"
