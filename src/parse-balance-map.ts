@@ -49,9 +49,14 @@ export function parseBalanceMap(balances: OldFormat | NewFormat[]): MerkleDistri
     if (parsedNum.lte(0)) throw new Error(`Invalid amount for account: ${account}`)
 
     const flags = {
-      isSOCKS: reasons.includes('socks'),
-      isLP: reasons.includes('lp'),
-      isUser: reasons.includes('user'),
+      isV1: reasons.includes('V1'),
+      isV2_DAI: reasons.includes('V2_DAI'),
+      isV2_USDC: reasons.includes('V2_USDC'),
+      isV2_DAI_PODS: reasons.includes('V2_DAI_PODS'),
+      isV2_USDC_PODS: reasons.includes('V2_USDC_PODS'),
+      isV3_DAI: reasons.includes('V3_DAI'),
+      isV3_UNI: reasons.includes('V3_UNI'),
+      isV3_USDC: reasons.includes('V3_USDC'),
     }
 
     memo[parsed] = { amount: parsedNum, ...(reasons === '' ? {} : { flags }) }

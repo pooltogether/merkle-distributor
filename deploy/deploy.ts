@@ -20,7 +20,7 @@ module.exports = async (hardhat) => {
       index,
       amount: rinkebyDistribution[address],
       // @ts-ignore
-      proof: tree.getProof(index, address, rinkebyDistribution[address])
+      proof: tree.getProof(index, address, rinkebyDistribution[address]),
     }
     return map
   }, {})
@@ -28,13 +28,10 @@ module.exports = async (hardhat) => {
   console.log(JSON.stringify(claims))
 
   const distributorResult = await deploy('ClearableMerkleDistributor', {
-    args: [
-      pool,
-      tree.getHexRoot()  
-    ],
+    args: [pool, tree.getHexRoot()],
     from: deployer,
-    skipIfAlreadyDeployed: true
+    skipIfAlreadyDeployed: true,
   })
 
   console.log(chalk.green(`Deployed MerkleDistributor: ${distributorResult.address}`))
-};
+}
