@@ -28,8 +28,8 @@ module.exports = {
       default: 0,
     },
     pool: {
-      4: "0xdD1cba915Be9c7a1e60c4B99DADE1FC49F67f80D"
-    }
+      4: '0xdD1cba915Be9c7a1e60c4B99DADE1FC49F67f80D',
+    },
   },
   networks,
 }
