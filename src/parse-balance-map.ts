@@ -57,6 +57,7 @@ export function parseBalanceMap(balances: OldFormat | NewFormat[]): MerkleDistri
       isV3_DAI: reasons.includes('V3_DAI'),
       isV3_UNI: reasons.includes('V3_UNI'),
       isV3_USDC: reasons.includes('V3_USDC'),
+      isSnapshot: reasons.includes('snapshot'),
     }
 
     memo[parsed] = { amount: parsedNum, ...(reasons === '' ? {} : { flags }) }

@@ -1,7 +1,7 @@
-# @uniswap/merkle-distributor
+# @pooltogether/merkle-distributor
 
-[![Tests](https://github.com/Uniswap/merkle-distributor/workflows/Tests/badge.svg)](https://github.com/Uniswap/merkle-distributor/actions?query=workflow%3ATests)
-[![Lint](https://github.com/Uniswap/merkle-distributor/workflows/Lint/badge.svg)](https://github.com/Uniswap/merkle-distributor/actions?query=workflow%3ALint)
+[![Tests](https://github.com/pooltogether/merkle-distributor/workflows/Tests/badge.svg)](https://github.com/pooltogether/merkle-distributor/actions?query=workflow%3ATests)
+[![Lint](https://github.com/pooltogether/merkle-distributor/workflows/Lint/badge.svg)](https://github.com/pooltogether/merkle-distributor/actions?query=workflow%3ALint)
 
 # Local Development
 
