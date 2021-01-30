@@ -11,7 +11,7 @@ module.exports = async (hardhat) => {
 
   console.log("deployer is ", deployer)
 
-   const sortedAddresses = Object.keys(distribution.claims).sort()
+  const sortedAddresses = Object.keys(distribution.claims).sort()
   const tree = new BalanceTree(
     sortedAddresses.map((address) => ({ account: address, amount: distribution.claims[address].amount }))
   )

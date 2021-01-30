@@ -1,13 +1,13 @@
 {
-  "name": "@uniswap/merkle-distributor",
+  "name": "@pooltogether/merkle-distributor",
   "author": {
-    "name": "Moody Salem"
+    "name": ""
   },
   "description": "📦 A smart contract that distributes a balance of tokens according to a merkle root",
   "version": "1.0.1",
-  "homepage": "https://uniswap.org",
+  "homepage": "https://pooltogether.org",
   "keywords": [
-    "uniswap",
+    "pooltogether",
     "erc20"
   ],
   "repository": {
