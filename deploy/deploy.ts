@@ -4,12 +4,12 @@ const distribution = require('../merkle_tree.json')
 
 // @ts-ignore
 module.exports = async (hardhat) => {
-  console.log("Deploying MerkleDistributor")
+  console.log('Deploying MerkleDistributor')
   const { getNamedAccounts, deployments, ethers } = hardhat
   const { deploy } = deployments
   const { deployer, pool } = await getNamedAccounts()
 
-  console.log("deployer is ", deployer)
+  console.log('deployer is ', deployer)
 
   const sortedAddresses = Object.keys(distribution.claims).sort()
   const tree = new BalanceTree(
