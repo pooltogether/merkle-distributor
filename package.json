@@ -49,6 +49,7 @@
     "compile": "hardhat compile",
     "prep": "ts-node prep.ts",
     "test": "hardhat test",
+    "deploy": "hardhat deploy --network",
     "preprocess": "ts-node scripts/pre-process-json.ts",
     "generate-merkle-root": "ts-node scripts/generate-merkle-root.ts",
     "verify-merkle-root": "ts-node scripts/verify-merkle-root.ts",

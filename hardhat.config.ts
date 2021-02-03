@@ -28,6 +28,7 @@ module.exports = {
       default: 0,
     },
     pool: {
+      default: '0x8f2450023CA7e6c1BF361451AB2dcEB32b3Bb27d',
       4: '0xEae2De7Ba52298a535C59D37BAe409cCeCaDE234',
     },
   },
