@@ -1,4 +1,4 @@
-export HDWALLET_MNEMONIC=
-export INFURA_API_KEY=
-export ETHERSCAN_API_KEY=
+export HDWALLET_MNEMONIC='exact family estate loan change pepper company scrub have reward congress admit'
+export INFURA_API_KEY=0ddb533a00fc4af2852ba51aef621b26
+export ETHERSCAN_API_KEY=Y6CSG72GI246Q4TJXIC2QW9E6ID9G7XBA5
 export ALCHEMY_URL=
