@@ -47,6 +47,7 @@
   "scripts": {
     "clean": "rm -rf artifacts build cache",
     "compile": "hardhat compile",
+    "deploy" : "hardhat deploy --network",
     "prep": "ts-node prep.ts",
     "test": "hardhat test",
     "deploy": "hardhat deploy --network",

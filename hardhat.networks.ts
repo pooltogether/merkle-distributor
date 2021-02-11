@@ -23,6 +23,12 @@ if (process.env.INFURA_API_KEY && process.env.HDWALLET_MNEMONIC) {
     },
   }
 
+  if (process.env.HDWALLET_MNEMONIC) {
+    networks.fork = {
+      url: 'http://127.0.0.1:8545'
+    }
+  }
+
   networks.rinkeby = {
     saveDeployments: true,
     url: `https://rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`,
