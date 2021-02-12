@@ -19,3 +19,5 @@ test-results.xml
 deployments/local*
 Networks.md
 deployments/fork*
+bq-results.processed.json
+merkle-proof.generated.json

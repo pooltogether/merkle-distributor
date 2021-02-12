@@ -11,10 +11,17 @@ program
 
 program.parse(process.argv)
 
-console.log('[')
-fs.readFileSync(program.input, { encoding: 'utf8' })
+const result = fs
+  .readFileSync(program.input, { encoding: 'utf8' })
   .split(/\r?\n/)
-  .forEach(function (line) {
-    console.log(line + ',')
-  })
+  .reduce((lines: Array<string>, line) => {
+    if (line != '') {
+      lines.push(line)
+    }
+    return lines
+  }, [])
+  .join(',\n')
+
+console.log('[')
+console.log(result)
 console.log(']')
