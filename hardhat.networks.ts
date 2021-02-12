@@ -2,11 +2,11 @@
 
 const networks = {}
 
-if (process.env.INFURA_API_KEY && process.env.HDWALLET_MNEMONIC) {
-  networks.fork = {
-    url: 'http://127.0.0.1:8545',
-  }
+networks.fork = {
+  url: 'http://127.0.0.1:8545'
+}
 
+if (process.env.INFURA_API_KEY) {
   networks.kovan = {
     saveDeployments: true,
     url: `https://kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
@@ -22,7 +22,7 @@ if (process.env.INFURA_API_KEY && process.env.HDWALLET_MNEMONIC) {
       mnemonic: process.env.HDWALLET_MNEMONIC,
     },
   }
-
+  
   networks.rinkeby = {
     saveDeployments: true,
     url: `https://rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`,

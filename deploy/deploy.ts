@@ -15,7 +15,7 @@ module.exports = async (hardhat) => {
   const tree = new BalanceTree(
     sortedAddresses.map((address) => ({ account: address, amount: distribution.claims[address].amount }))
   )
-
+  console.log("POOL token at : ", pool)
   const distributorResult = await deploy('MerkleDistributor', {
     args: [pool, tree.getHexRoot()],
     from: deployer,
