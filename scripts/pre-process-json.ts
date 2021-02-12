@@ -11,7 +11,8 @@ program
 
 program.parse(process.argv)
 
-const result = fs.readFileSync(program.input, { encoding: 'utf8' })
+const result = fs
+  .readFileSync(program.input, { encoding: 'utf8' })
   .split(/\r?\n/)
   .reduce((lines: Array<string>, line) => {
     if (line != '') {
