@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@nomiclabs/hardhat-etherscan": "^2.1.1",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@openzeppelin/contracts": "3.1.0",
     "@types/chai": "^4.2.14",
@@ -47,14 +48,14 @@
   "scripts": {
     "clean": "rm -rf artifacts build cache",
     "compile": "hardhat compile",
-    "deploy" : "hardhat deploy --network",
+    "deploy": "hardhat deploy --network",
     "prep": "ts-node prep.ts",
     "test": "hardhat test",
-    "deploy": "hardhat deploy --network",
     "preprocess": "ts-node scripts/pre-process-json.ts",
     "generate-merkle-root": "ts-node scripts/generate-merkle-root.ts",
     "verify-merkle-root": "ts-node scripts/verify-merkle-root.ts",
     "generate-merkle-root:example": "ts-node scripts/generate-merkle-root.ts --input scripts/example.json",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "yarn test",
+    "etherscan-verify": "hardhat etherscan-verify --solc-input --api-key $ETHERSCAN_API_KEY --network"
   }
 }

@@ -1,6 +1,8 @@
 import '@nomiclabs/hardhat-waffle'
 import 'hardhat-deploy'
 import 'hardhat-deploy-ethers'
+import '@nomiclabs/hardhat-etherscan'
+
 
 import { networks } from './hardhat.networks'
 
@@ -29,7 +31,7 @@ module.exports = {
     },
     pool: {
       default: "0x77511319482F9dcc77C6eba1aF964423f965f5f0",
-      4: '0xEae2De7Ba52298a535C59D37BAe409cCeCaDE234',
+      4: '0x8C219D7CFC4C3646b09b644d4eAa103E23f2eE30',
     },
   },
   networks,
