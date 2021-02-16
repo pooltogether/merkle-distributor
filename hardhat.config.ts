@@ -2,7 +2,7 @@ import '@nomiclabs/hardhat-waffle'
 import 'hardhat-deploy'
 import 'hardhat-deploy-ethers'
 import '@nomiclabs/hardhat-etherscan'
-
+import 'hardhat-abi-exporter'
 
 import { networks } from './hardhat.networks'
 
@@ -35,4 +35,9 @@ module.exports = {
     },
   },
   networks,
+  abiExporter: {
+    path: './abis',
+    clear: true,
+    flat: true
+  }
 }
