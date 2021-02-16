@@ -4,7 +4,7 @@
     "name": ""
   },
   "description": "📦 A smart contract that distributes a balance of tokens according to a merkle root",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "homepage": "https://pooltogether.org",
   "keywords": [
     "pooltogether",
@@ -14,9 +14,6 @@
     "type": "git",
     "url": "https://github.com/pooltogether/merkle-distributor"
   },
-  "files": [
-    "build"
-  ],
   "engines": {
     "node": ">=10"
   },
@@ -56,6 +53,19 @@
     "verify-merkle-root": "ts-node scripts/verify-merkle-root.ts",
     "generate-merkle-root:example": "ts-node scripts/generate-merkle-root.ts --input scripts/example.json",
     "prepublishOnly": "yarn test",
-    "etherscan-verify": "hardhat etherscan-verify --solc-input --api-key $ETHERSCAN_API_KEY --network"
-  }
+    "etherscan-verify": "hardhat etherscan-verify --solc-input --api-key $ETHERSCAN_API_KEY --network",
+    "prepack": "yarn clean && hardhat compile",
+    "postpublish": "PACKAGE_VERSION=$(./scripts/package-version.sh) && git tag -ae v$PACKAGE_VERSION && git push --tags"
+  },
+  "files": [
+    "LICENSE",
+    "abis/**",
+    "build/**",
+    "artifacts/**",
+    ".build-openzeppelin/**",
+    "contracts/**",
+    "deployments/**",
+    "deploy/**",
+    "js/**"
+  ]
 }
