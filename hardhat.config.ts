@@ -31,7 +31,7 @@ module.exports = {
     },
     pool: {
       default: "0x77511319482F9dcc77C6eba1aF964423f965f5f0",
-      4: '0x8C219D7CFC4C3646b09b644d4eAa103E23f2eE30',
+      4: '0xc4E90a8Dc6CaAb329f08ED3C8abc6b197Cf0F40A',
     },
   },
   networks,
